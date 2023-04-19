@@ -1,11 +1,8 @@
-
 import "./form.css";
 
 const AppFormArea = ({ listTransactions, setListTransactions }) => {
   const preventReload = (event) => {
     event.preventDefault();
-
-  
 
     if (event.target[2].value === "saída") {
       const transaction = {
@@ -53,12 +50,7 @@ const AppFormArea = ({ listTransactions, setListTransactions }) => {
 
 export default AppFormArea;
 
-
 //uma outra forma de fazer//
-
-
-
-
 
 // const AppFormArea = ({ listTransactions, setListTransactions }) => {
 //     const [description,setDescription] = useState("")
@@ -67,7 +59,6 @@ export default AppFormArea;
 //   const preventReload = (event) => {
 //     event.preventDefault();
 
-  
 //     if (type === "saída") {
 //         const transaction = {
 //             description: description,

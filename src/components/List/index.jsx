@@ -1,5 +1,5 @@
 import "./List.css";
-import deleteImg from "../../assets/trash.png";
+
 import { useState } from "react";
 let AppEntriesMenu = ({ listTransactions , setListTransactions }) => {
 
@@ -47,7 +47,7 @@ setListTransactions(newEntries)
                   </div>
 
                   <span>R$ {element.value}</span>
-                  <button onClick={() => deleteEntry(element)}> <img src={deleteImg} alt="" /></button>
+                  <button onClick={() => deleteEntry(element)}>X</button>
                 </div>
               </li>
             ) : (
@@ -59,7 +59,7 @@ setListTransactions(newEntries)
                     <span>{element.type}</span>
                   </div>
                   <span>R$ {element.value}</span>
-                  <button onClick={() => deleteEntry(element)}>  <img src={deleteImg} alt="" /></button>
+                  <button onClick={() => deleteEntry(element)}>X</button>
                 </div>
               </li>
             )
@@ -75,7 +75,7 @@ setListTransactions(newEntries)
                 </div>
 
                 <span>R$ {element.value}</span>
-                <button onClick={() => deleteEntry(element)}> <img src={deleteImg} alt="" /></button>
+                <button onClick={() => deleteEntry(element)}>X</button>
               </div>
             </li>
           ) : (
@@ -87,7 +87,7 @@ setListTransactions(newEntries)
                   <span>{element.type}</span>
                 </div>
                 <span>R$ {element.value}</span>
-                <button onClick={() => deleteEntry(element)}>  <img src={deleteImg} alt="" /></button>
+                <button onClick={() => deleteEntry(element)}>X</button>
               </div>
             </li>
           )

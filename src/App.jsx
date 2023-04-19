@@ -4,7 +4,7 @@ import AppFormArea from "./components/form";
 import AppEntriesMenu from "./components/List";
 import { useState } from "react";
 import AppTotalMoney from "./components/totalMoney";
-import homeImg from "./assets/Group 262.png";
+
 
 function App() {
   const [listTransactions, setListTransactions] = useState([]);
@@ -41,11 +41,12 @@ function App() {
               <button onClick={ () => setLogIn(true)}>Iniciar</button>
             </section>
             <section id="homeImage">
-              <img id="homeImg" src={homeImg} alt="" />
             </section>
           </div>
         </div>
       )}
+
+      
     </>
   );
 }

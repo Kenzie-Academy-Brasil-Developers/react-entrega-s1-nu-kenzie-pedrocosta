@@ -5,6 +5,7 @@ import "./totalMoney.css"
 let AppTotalMoney = ({listTransactions}) => {
 
 const totalValue = listTransactions.reduce((cont, actual) =>{
+    
     return cont + actual.value
 },0)
 
